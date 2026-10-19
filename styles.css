@@ -71,9 +71,10 @@ p { margin: 0 0 1em; max-width: 68ch; }
 }
 .nav-inner { display: flex; align-items: center; justify-content: space-between; height: 72px; }
 .brand { display: flex; align-items: center; gap: .65em; text-decoration: none; }
-.brand-mark { width: 42px; height: 42px; }
-.brand-text { font-family: var(--head); font-weight: 800; font-size: 1.6rem; line-height: 1; }
-.brand-text span { font-weight: 600; color: var(--paver); }
+.brand-mark { width: 56px; height: 56px; }
+.brand-text { display: flex; flex-direction: column; font-family: var(--head); font-weight: 800; font-size: 1.55rem; line-height: 1; }
+.brand-text span { font-weight: 600; font-size: 1.05rem; color: var(--paver); margin-top: 3px; }
+.footer-logo { width: 140px; height: 140px; }
 .nav-links { display: flex; align-items: center; gap: 1.6rem; }
 .nav-links a:not(.btn) { text-decoration: none; font-weight: 500; color: var(--paver); }
 .nav-links a:not(.btn):hover { color: var(--trim); text-decoration: underline; text-underline-offset: 4px; }
@@ -187,9 +188,7 @@ p { margin: 0 0 1em; max-width: 68ch; }
 
 /* Footer */
 .footer { background: #1a1d20; color: #aab1b7; padding-block: 44px; }
-.footer .brand-text { color: var(--rail); }
-.footer .brand-text span { color: #aab1b7; }
-.footer-inner { display: grid; grid-template-columns: auto 1fr auto; gap: 12px 40px; align-items: center; }
+.footer-inner { display: grid; grid-template-columns: auto 1fr auto; gap: 16px 40px; align-items: center; }
 .footer p { margin: 0; }
 .footer a { color: var(--rail); }
 .footer .copy { grid-column: 1 / -1; font-size: .9rem; }
@@ -224,7 +223,9 @@ p { margin: 0 0 1em; max-width: 68ch; }
   .hero-compare .compare { max-height: none; }
 }
 @media (max-width: 560px) {
-  .brand-text { font-size: 1.35rem; }
+  .brand-text { font-size: 1.3rem; }
+  .brand-text span { font-size: .95rem; }
+  .brand-mark { width: 48px; height: 48px; }
   .steps, .facts-list { grid-template-columns: 1fr; }
   .facts-list { gap: 16px; }
   .contact-form { grid-template-columns: 1fr; padding: 22px; }
