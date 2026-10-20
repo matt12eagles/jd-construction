@@ -13,23 +13,30 @@
 </head>
 <body>
 
+  <!--
+    Translations: every element with data-i18n (text), data-i18n-alt (image description),
+    data-i18n-ph (placeholder) or data-i18n-aria (screen-reader label) has a Spanish
+    version under the same key in es.js. When you change English text here, update es.js too.
+  -->
+
   <header class="nav" id="top">
     <div class="wrap nav-inner">
       <a href="#top" class="brand">
         <img src="images/logo.svg" alt="" class="brand-mark">
         <span class="brand-text">J&amp;D Construction <span>&amp; Remodeling</span></span>
       </a>
-      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+      <nav class="nav-links">
+        <a href="#services" data-i18n="nav.services">Services</a>
+        <a href="#process" data-i18n="nav.process">How we work</a>
+        <a href="#work" data-i18n="nav.work">Our work</a>
+        <a href="#reviews" data-i18n="nav.reviews">Reviews</a>
+        <a href="#contact" data-i18n="nav.contact">Contact</a>
+        <a href="tel:+13473851857" class="btn btn-small" data-i18n="nav.call">Call 347-385-1857</a>
+      </nav>
+      <button type="button" class="lang-toggle" id="lang-toggle" lang="es" aria-label="Ver el sitio en español">Español</button>
+      <button class="nav-toggle" aria-label="Open menu" data-i18n-aria="nav.menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
-      <nav class="nav-links">
-        <a href="#services">Services</a>
-        <a href="#process">How we work</a>
-        <a href="#work">Our work</a>
-        <a href="#reviews">Reviews</a>
-        <a href="#contact">Contact</a>
-        <a href="tel:+13473851857" class="btn btn-small">Call 347-385-1857</a>
-      </nav>
     </div>
   </header>
 
@@ -37,58 +44,58 @@
     <section class="hero">
       <div class="wrap hero-grid">
         <div class="hero-text">
-          <h1>Quality work. Honest prices. A crew you'll like.</h1>
-          <p class="lead">Jose helps you design it, then his friendly team builds it right. Decks, siding, bathrooms, patios and concrete across Montgomery, Chester, Berks and Bucks counties.</p>
+          <h1 data-i18n="hero.title">Quality work. Honest prices. A crew you'll like.</h1>
+          <p class="lead" data-i18n="hero.lead">Jose helps you design it, then his friendly team builds it right. Decks, siding, bathrooms, patios and concrete across Montgomery, Chester, Berks and Bucks counties.</p>
           <div class="hero-actions">
-            <a href="#contact" class="btn">Get a free estimate</a>
-            <a href="tel:+13473851857" class="btn btn-line">Call Jose</a>
+            <a href="#contact" class="btn" data-i18n="cta.estimate">Get a free estimate</a>
+            <a href="tel:+13473851857" class="btn btn-line" data-i18n="cta.call">Call Jose</a>
           </div>
         </div>
 
         <figure class="hero-compare">
           <div class="compare" style="--pos:50%">
-            <img src="images/deck-after.jpg" alt="After: new gray composite deck with white and black railings" class="compare-after">
+            <img src="images/deck-after.jpg" alt="After: new gray composite deck with white and black railings" data-i18n-alt="alt.deckAfter" class="compare-after">
             <div class="compare-before-wrap">
-              <img src="images/deck-before.jpg" alt="Before: weathered, rotting wood deck" class="compare-before">
+              <img src="images/deck-before.jpg" alt="Before: weathered, rotting wood deck" data-i18n-alt="alt.deckBefore" class="compare-before">
             </div>
-            <span class="tag tag-before">Before</span>
-            <span class="tag tag-after">After</span>
+            <span class="tag tag-before" data-i18n="tag.before">Before</span>
+            <span class="tag tag-after" data-i18n="tag.after">After</span>
             <div class="compare-handle" aria-hidden="true"><span></span></div>
-            <input type="range" min="0" max="100" value="50" class="compare-range" aria-label="Compare deck before and after">
+            <input type="range" min="0" max="100" value="50" class="compare-range" aria-label="Compare deck before and after" data-i18n-aria="aria.compareDeck">
           </div>
-          <figcaption>Deck replacement in East Greenville. Drag the handle to compare.</figcaption>
+          <figcaption data-i18n="hero.caption">Deck replacement in East Greenville. Drag the handle to compare.</figcaption>
         </figure>
       </div>
     </section>
 
-    <section class="facts" aria-label="Why choose Jose">
+    <section class="facts" aria-label="Why choose Jose" data-i18n-aria="facts.label">
       <ul class="wrap facts-list">
-        <li><strong>Design help included</strong> We plan the vision with you</li>
-        <li><strong>Fair, upfront pricing</strong> No surprises on the bill</li>
-        <li><strong>Friendly crew</strong> Respectful of your home</li>
-        <li><strong>We travel</strong> Based in Pottstown, working in four counties</li>
+        <li data-i18n="facts.design"><strong>Design help included</strong> We plan the vision with you</li>
+        <li data-i18n="facts.pricing"><strong>Fair, upfront pricing</strong> No surprises on the bill</li>
+        <li data-i18n="facts.crew"><strong>Friendly crew</strong> Respectful of your home</li>
+        <li data-i18n="facts.travel"><strong>We travel</strong> Based in Pottstown, working in four counties</li>
       </ul>
     </section>
 
     <section id="services" class="section">
       <div class="wrap">
-        <h2>What we build</h2>
+        <h2 data-i18n="services.title">What we build</h2>
         <dl class="services">
           <div>
-            <dt>Decks</dt>
-            <dd>New builds and full replacements in composite or wood, with railings, stairs and lighting. If your deck is rotting, we'll tear it out and build one that lasts.</dd>
+            <dt data-i18n="services.decks">Decks</dt>
+            <dd data-i18n="services.decksText">New builds and full replacements in composite or wood, with railings, stairs and lighting. If your deck is rotting, we'll tear it out and build one that lasts.</dd>
           </div>
           <div>
-            <dt>Siding</dt>
-            <dd>Vinyl, fiber cement and shake-style siding installed clean and tight. A fresh exterior that protects your home and improves its curb appeal.</dd>
+            <dt data-i18n="services.siding">Siding</dt>
+            <dd data-i18n="services.sidingText">Vinyl, fiber cement and shake-style siding installed clean and tight. A fresh exterior that protects your home and improves its curb appeal.</dd>
           </div>
           <div>
-            <dt>Bathrooms</dt>
-            <dd>Full remodels or simple updates, including tile, showers, tubs, vanities and fixtures. We keep the job tidy and on schedule.</dd>
+            <dt data-i18n="services.baths">Bathrooms</dt>
+            <dd data-i18n="services.bathsText">Full remodels or simple updates, including tile, showers, tubs, vanities and fixtures. We keep the job tidy and on schedule.</dd>
           </div>
           <div>
-            <dt>Patios &amp; concrete</dt>
-            <dd>Paver patios, walkways, retaining walls, fire pits and concrete pads, set on a compacted base so everything stays level for years.</dd>
+            <dt data-i18n="services.patios">Patios &amp; concrete</dt>
+            <dd data-i18n="services.patiosText">Paver patios, walkways, retaining walls, fire pits and concrete pads, set on a compacted base so everything stays level for years.</dd>
           </div>
         </dl>
       </div>
@@ -96,24 +103,24 @@
 
     <section id="process" class="section section-alt">
       <div class="wrap">
-        <h2>We help you design it, then we build it</h2>
-        <p class="section-lead">Not sure exactly what you want? That's where Jose shines. He'll walk your property with you, share ideas and help shape the final vision, from layout and materials to colors and finishing touches.</p>
+        <h2 data-i18n="process.title">We help you design it, then we build it</h2>
+        <p class="section-lead" data-i18n="process.lead">Not sure exactly what you want? That's where Jose shines. He'll walk your property with you, share ideas and help shape the final vision, from layout and materials to colors and finishing touches.</p>
         <ol class="steps">
           <li>
-            <h3>Walk-through and ideas</h3>
-            <p>Jose visits, listens to what you're picturing and suggests options you may not have thought of.</p>
+            <h3 data-i18n="process.s1">Walk-through and ideas</h3>
+            <p data-i18n="process.s1Text">Jose visits, listens to what you're picturing and suggests options you may not have thought of.</p>
           </li>
           <li>
-            <h3>Design the vision</h3>
-            <p>Together you settle on layout, materials and details, so you know exactly what you're getting.</p>
+            <h3 data-i18n="process.s2">Design the vision</h3>
+            <p data-i18n="process.s2Text">Together you settle on layout, materials and details, so you know exactly what you're getting.</p>
           </li>
           <li>
-            <h3>Honest quote</h3>
-            <p>A clear, fair price up front, with no padding and no surprise charges later.</p>
+            <h3 data-i18n="process.s3">Honest quote</h3>
+            <p data-i18n="process.s3Text">A clear, fair price up front, with no padding and no surprise charges later.</p>
           </li>
           <li>
-            <h3>Build it right</h3>
-            <p>The crew gets to work, keeps you updated and leaves the site clean when the job's done.</p>
+            <h3 data-i18n="process.s4">Build it right</h3>
+            <p data-i18n="process.s4Text">The crew gets to work, keeps you updated and leaves the site clean when the job's done.</p>
           </li>
         </ol>
       </div>
@@ -121,66 +128,66 @@
 
     <section id="work" class="section">
       <div class="wrap">
-        <h2>From a strip of lawn to a patio with a fire pit</h2>
+        <h2 data-i18n="work.title">From a strip of lawn to a patio with a fire pit</h2>
         <div class="feature">
           <div class="compare" style="--pos:50%">
-            <img src="images/patio-after.jpg" alt="After: large paver patio with retaining wall along the side of the house" class="compare-after">
+            <img src="images/patio-after.jpg" alt="After: large paver patio with retaining wall along the side of the house" data-i18n-alt="alt.patioAfter" class="compare-after">
             <div class="compare-before-wrap">
-              <img src="images/patio-before.jpg" alt="Before: plain grass strip along the side of the house" class="compare-before">
+              <img src="images/patio-before.jpg" alt="Before: plain grass strip along the side of the house" data-i18n-alt="alt.patioBefore" class="compare-before">
             </div>
-            <span class="tag tag-before">Before</span>
-            <span class="tag tag-after">After</span>
+            <span class="tag tag-before" data-i18n="tag.before">Before</span>
+            <span class="tag tag-after" data-i18n="tag.after">After</span>
             <div class="compare-handle" aria-hidden="true"><span></span></div>
-            <input type="range" min="0" max="100" value="50" class="compare-range" aria-label="Compare patio before and after">
+            <input type="range" min="0" max="100" value="50" class="compare-range" aria-label="Compare patio before and after" data-i18n-aria="aria.comparePatio">
           </div>
           <div class="feature-text">
-            <p>This side yard in East Greenville was a strip of grass nobody used. Jose walked it with the homeowners, sketched out a patio that wraps the house, and his crew built it with a retaining wall, a dark contrasting border and a built-in fire pit.</p>
-            <p>The same crew replaced the falling-apart deck shown at the top of this page.</p>
+            <p data-i18n="work.p1">This side yard in East Greenville was a strip of grass nobody used. Jose walked it with the homeowners, sketched out a patio that wraps the house, and his crew built it with a retaining wall, a dark contrasting border and a built-in fire pit.</p>
+            <p data-i18n="work.p2">The same crew replaced the falling-apart deck shown at the top of this page.</p>
             <div class="gallery">
               <button class="gallery-item" data-full="images/patio-firepit.jpg">
-                <img src="images/patio-firepit.jpg" alt="Built-in paver fire pit next to the new patio" loading="lazy">
+                <img src="images/patio-firepit.jpg" alt="Built-in paver fire pit next to the new patio" data-i18n-alt="alt.firepit" loading="lazy">
               </button>
               <button class="gallery-item" data-full="images/deck-after.jpg">
-                <img src="images/deck-after.jpg" alt="Finished composite deck and stairs" loading="lazy">
+                <img src="images/deck-after.jpg" alt="Finished composite deck and stairs" data-i18n-alt="alt.deckDone" loading="lazy">
               </button>
             </div>
           </div>
         </div>
 
-        <h3 class="more-title">More projects</h3>
+        <h3 class="more-title" data-i18n="more.title">More projects</h3>
         <div class="more">
           <figure class="more-item more-pair">
             <div class="pair">
               <button class="gallery-item" data-full="images/stairs-before.jpg">
-                <img src="images/stairs-before.jpg" alt="Before: crumbling, cracked concrete steps overgrown with weeds" loading="lazy">
-                <span class="tag tag-before">Before</span>
+                <img src="images/stairs-before.jpg" alt="Before: crumbling, cracked concrete steps overgrown with weeds" data-i18n-alt="alt.stairsBefore" loading="lazy">
+                <span class="tag tag-before" data-i18n="tag.before">Before</span>
               </button>
               <button class="gallery-item" data-full="images/stairs-after.jpg">
-                <img src="images/stairs-after.jpg" alt="After: new concrete steps freshly poured in wood forms" loading="lazy">
-                <span class="tag tag-after">After</span>
+                <img src="images/stairs-after.jpg" alt="After: new concrete steps freshly poured in wood forms" data-i18n-alt="alt.stairsAfter" loading="lazy">
+                <span class="tag tag-after" data-i18n="tag.after">After</span>
               </button>
             </div>
             <figcaption>
-              <h4>Concrete steps</h4>
-              <p>These steps were cracked, crumbling and overgrown. The crew broke them out, built new forms and poured a fresh set of steps with a solid landing. Shown here right after the pour.</p>
+              <h4 data-i18n="more.stairs">Concrete steps</h4>
+              <p data-i18n="more.stairsText">These steps were cracked, crumbling and overgrown. The crew broke them out, built new forms and poured a fresh set of steps with a solid landing. Shown here right after the pour.</p>
             </figcaption>
           </figure>
           <figure class="more-item">
             <button class="gallery-item" data-full="images/bathroom.jpg">
-              <img src="images/bathroom.jpg" alt="Remodeled bathroom with textured white tile, new tub and matte black fixtures" loading="lazy">
+              <img src="images/bathroom.jpg" alt="Remodeled bathroom with textured white tile, new tub and matte black fixtures" data-i18n-alt="alt.bath" loading="lazy">
             </button>
             <figcaption>
-              <h4>Bathroom remodel</h4>
-              <p>Textured wave tile up the walls, a marble-look floor, a new tub and matte black fixtures.</p>
+              <h4 data-i18n="more.bath">Bathroom remodel</h4>
+              <p data-i18n="more.bathText">Textured wave tile up the walls, a marble-look floor, a new tub and matte black fixtures.</p>
             </figcaption>
           </figure>
           <figure class="more-item">
             <button class="gallery-item" data-full="images/addition-deck.jpg">
-              <img src="images/addition-deck.jpg" alt="New home addition framed with roof trusses above a new wood deck with stairs" loading="lazy">
+              <img src="images/addition-deck.jpg" alt="New home addition framed with roof trusses above a new wood deck with stairs" data-i18n-alt="alt.addition" loading="lazy">
             </button>
             <figcaption>
-              <h4>Addition and deck</h4>
-              <p>A new addition framed out with roof trusses, plus a large wood deck with a full staircase. Shown mid-build.</p>
+              <h4 data-i18n="more.addition">Addition and deck</h4>
+              <p data-i18n="more.additionText">A new addition framed out with roof trusses, plus a large wood deck with a full staircase. Shown mid-build.</p>
             </figcaption>
           </figure>
         </div>
@@ -189,20 +196,22 @@
 
     <section id="reviews" class="section section-alt">
       <div class="wrap">
-        <h2>What homeowners say</h2>
+        <h2 data-i18n="reviews.title">What homeowners say</h2>
+        <p class="review-note" data-i18n="reviews.note"></p>
         <div class="reviews">
-          <!-- To add a review, copy one <blockquote class="review"> block below and change the text. -->
+          <!-- To add a review, copy one <blockquote class="review"> block below, change the text,
+               give it new data-i18n keys and add the Spanish version to es.js. -->
           <blockquote class="review">
-            <p>We had a strip of grass along the side of the house we never used. Jose came out, helped us figure out what it could be, and his crew turned it into a big paver patio with a retaining wall and a fire pit. They also replaced our falling-apart deck. Great price, great people, and they drove all the way out to East Greenville to do it.</p>
-            <footer><span class="stars" aria-label="5 out of 5 stars">★★★★★</span> <strong>Matt G.</strong>, paver patio and deck in East Greenville</footer>
+            <p data-i18n="reviews.r1">We had a strip of grass along the side of the house we never used. Jose came out, helped us figure out what it could be, and his crew turned it into a big paver patio with a retaining wall and a fire pit. They also replaced our falling-apart deck. Great price, great people, and they drove all the way out to East Greenville to do it.</p>
+            <footer><span class="stars" aria-label="5 out of 5 stars" data-i18n-aria="reviews.stars">★★★★★</span> <strong>Matt G.</strong><span data-i18n="reviews.r1Job">, paver patio and deck in East Greenville</span></footer>
           </blockquote>
           <blockquote class="review">
-            <p>Jose was able to build a deck while we were away on vacation. It was an amazing hands-off experience, and his design could make the cover of an HGTV magazine!</p>
-            <footer><span class="stars" aria-label="5 out of 5 stars">★★★★★</span> <strong>Kellie G.</strong>, new deck</footer>
+            <p data-i18n="reviews.r2">Jose was able to build a deck while we were away on vacation. It was an amazing hands-off experience, and his design could make the cover of an HGTV magazine!</p>
+            <footer><span class="stars" aria-label="5 out of 5 stars" data-i18n-aria="reviews.stars">★★★★★</span> <strong>Kellie G.</strong><span data-i18n="reviews.r2Job">, new deck</span></footer>
           </blockquote>
           <blockquote class="review">
-            <p>Jose's team was able to convert our deck from unsafe to gorgeous. I now enjoy a cup of coffee out there daily in the summer! A huge thank you to Jose's team.</p>
-            <footer><span class="stars" aria-label="5 out of 5 stars">★★★★★</span> <strong>Kelsey L.</strong>, deck rebuild</footer>
+            <p data-i18n="reviews.r3">Jose's team was able to convert our deck from unsafe to gorgeous. I now enjoy a cup of coffee out there daily in the summer! A huge thank you to Jose's team.</p>
+            <footer><span class="stars" aria-label="5 out of 5 stars" data-i18n-aria="reviews.stars">★★★★★</span> <strong>Kelsey L.</strong><span data-i18n="reviews.r3Job">, deck rebuild</span></footer>
           </blockquote>
         </div>
       </div>
@@ -211,8 +220,8 @@
     <section id="area" class="section section-dark">
       <div class="wrap area">
         <div>
-          <h2>Based in Pottstown. Happy to travel.</h2>
-          <p>We work throughout Montgomery, Chester, Berks and Bucks counties. Don't see your town? Ask anyway.</p>
+          <h2 data-i18n="area.title">Based in Pottstown. Happy to travel.</h2>
+          <p data-i18n="area.text">We work throughout Montgomery, Chester, Berks and Bucks counties. Don't see your town? Ask anyway.</p>
         </div>
         <ul class="towns">
           <li>Pottstown</li><li>East Greenville</li><li>Pennsburg</li><li>Gilbertsville</li>
@@ -226,32 +235,32 @@
     <section id="contact" class="section">
       <div class="wrap contact">
         <div class="contact-info">
-          <h2>Get a free estimate</h2>
-          <p>Call or text Jose to set up a visit. Not sure what you want yet? That's fine. He'll help you figure it out.</p>
+          <h2 data-i18n="contact.title">Get a free estimate</h2>
+          <p data-i18n="contact.text">Call or text Jose to set up a visit. Not sure what you want yet? That's fine. He'll help you figure it out.</p>
           <a class="phone" href="tel:+13473851857">(347) 385-1857</a>
           <div class="contact-actions">
-            <a class="btn" href="tel:+13473851857">Call Jose</a>
-            <a class="btn btn-line" href="sms:+13473851857">Text Jose</a>
+            <a class="btn" href="tel:+13473851857" data-i18n="cta.call">Call Jose</a>
+            <a class="btn btn-line" href="sms:+13473851857" data-i18n="cta.text">Text Jose</a>
           </div>
         </div>
 
         <form class="contact-form" id="contact-form">
-          <p class="form-title">Or send the details by text</p>
-          <label>Name<input name="name" required autocomplete="name"></label>
-          <label>Town<input name="town" placeholder="e.g. Pottstown"></label>
-          <label class="full">Project
+          <p class="form-title" data-i18n="form.title">Or send the details by text</p>
+          <label><span data-i18n="form.name">Name</span><input name="name" required autocomplete="name"></label>
+          <label><span data-i18n="form.town">Town</span><input name="town" placeholder="e.g. Pottstown" data-i18n-ph="form.townPh"></label>
+          <label class="full"><span data-i18n="form.project">Project</span>
             <select name="project">
-              <option>Deck</option>
-              <option>Siding</option>
-              <option>Bathroom</option>
-              <option>Paver patio</option>
-              <option>Concrete</option>
-              <option>Something else</option>
+              <option data-i18n="form.optDeck">Deck</option>
+              <option data-i18n="form.optSiding">Siding</option>
+              <option data-i18n="form.optBath">Bathroom</option>
+              <option data-i18n="form.optPatio">Paver patio</option>
+              <option data-i18n="form.optConcrete">Concrete</option>
+              <option data-i18n="form.optOther">Something else</option>
             </select>
           </label>
-          <label class="full">Tell us about it<textarea name="details" rows="4" placeholder="Size, timeline, ideas, anything that helps"></textarea></label>
-          <button type="submit" class="btn full">Text Jose these details</button>
-          <p class="form-note full">This opens your phone's messages app with everything filled in.</p>
+          <label class="full"><span data-i18n="form.details">Tell us about it</span><textarea name="details" rows="4" placeholder="Size, timeline, ideas, anything that helps" data-i18n-ph="form.detailsPh"></textarea></label>
+          <button type="submit" class="btn full" data-i18n="form.submit">Text Jose these details</button>
+          <p class="form-note full" data-i18n="form.note">This opens your phone's messages app with everything filled in.</p>
         </form>
       </div>
     </section>
@@ -262,17 +271,18 @@
       <a href="#top" class="brand">
         <img src="images/logo-light.svg" alt="J&amp;D Construction &amp; Remodeling" class="footer-logo">
       </a>
-      <p>Decks, siding, bathrooms, patios and concrete in Montgomery, Chester, Berks and Bucks counties, PA.</p>
+      <p data-i18n="footer.text">Decks, siding, bathrooms, patios and concrete in Montgomery, Chester, Berks and Bucks counties, PA.</p>
       <p><a href="tel:+13473851857">(347) 385-1857</a></p>
       <p class="copy">© <span id="year"></span> J&amp;D Construction &amp; Remodeling</p>
     </div>
   </footer>
 
   <div class="lightbox" id="lightbox" hidden>
-    <button class="lightbox-close" aria-label="Close">×</button>
+    <button class="lightbox-close" aria-label="Close" data-i18n-aria="aria.close">×</button>
     <img alt="">
   </div>
 
+  <script src="es.js"></script>
   <script src="script.js"></script>
 </body>
 </html>

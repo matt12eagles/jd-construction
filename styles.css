@@ -75,7 +75,14 @@ p { margin: 0 0 1em; max-width: 68ch; }
 .brand-text { display: flex; flex-direction: column; font-family: var(--head); font-weight: 800; font-size: 1.55rem; line-height: 1; }
 .brand-text span { font-weight: 600; font-size: 1.05rem; color: var(--paver); margin-top: 3px; }
 .footer-logo { width: 140px; height: 140px; }
-.nav-links { display: flex; align-items: center; gap: 1.6rem; }
+.nav-links { display: flex; align-items: center; gap: 1.3rem; margin-left: auto; white-space: nowrap; }
+.lang-toggle {
+  margin-left: 1.25rem; padding: .45em .8em; border: 2px solid var(--trim); border-radius: 4px; background: var(--rail);
+  font-family: var(--head); font-weight: 700; font-size: 1.05rem; line-height: 1; color: var(--trim); cursor: pointer;
+}
+.lang-toggle:hover { background: var(--trim); color: var(--rail); }
+.review-note { color: var(--paver); font-size: .95rem; margin: -.5rem 0 0; }
+.review-note:empty { display: none; }
 .nav-links a:not(.btn) { text-decoration: none; font-weight: 500; color: var(--paver); }
 .nav-links a:not(.btn):hover { color: var(--trim); text-decoration: underline; text-underline-offset: 4px; }
 .nav-toggle { display: none; background: none; border: 0; padding: 8px; cursor: pointer; }
@@ -217,8 +224,10 @@ p { margin: 0 0 1em; max-width: 68ch; }
   .more { grid-template-columns: 1fr 1fr; }
   .footer-inner { grid-template-columns: 1fr; }
 }
-@media (max-width: 860px) {
+/* Compact menu: the Spanish labels need more room than the English ones */
+@media (max-width: 1120px) {
   .nav-toggle { display: block; }
+  .lang-toggle { margin-left: auto; margin-right: 8px; }
   .nav-links {
     position: absolute; top: 72px; left: 0; right: 0; flex-direction: column; align-items: stretch; gap: 0;
     background: var(--rail); border-bottom: 1px solid var(--line); padding: 8px 16px 16px;
@@ -230,7 +239,8 @@ p { margin: 0 0 1em; max-width: 68ch; }
   .nav-toggle[aria-expanded="true"] span:nth-child(1) { transform: translateY(8px) rotate(45deg); }
   .nav-toggle[aria-expanded="true"] span:nth-child(2) { opacity: 0; }
   .nav-toggle[aria-expanded="true"] span:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
-
+}
+@media (max-width: 860px) {
   .hero-grid, .feature, .services, .more { grid-template-columns: 1fr; }
   .more-pair { grid-column: auto; }
   .hero-compare .compare { max-height: none; }

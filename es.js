@@ -1,0 +1,117 @@
+// Spanish text for the page. Keys match the data-i18n* attributes in index.html.
+// English is read straight from index.html, so only Spanish lives here.
+const ES = {
+  "page.title": "J&D Construction & Remodeling | Terrazas, revestimiento, baños y patios | Pottstown, PA",
+
+  "nav.services": "Servicios",
+  "nav.process": "Cómo trabajamos",
+  "nav.work": "Proyectos",
+  "nav.reviews": "Opiniones",
+  "nav.contact": "Contacto",
+  "nav.call": "Llame al 347-385-1857",
+  "nav.menu": "Abrir menú",
+
+  "hero.title": "Trabajo de calidad. Precios honestos. Un equipo que le encantará.",
+  "hero.lead": "Jose le ayuda a diseñarlo y su amable equipo lo construye bien. Terrazas, revestimiento exterior, baños, patios y concreto en los condados de Montgomery, Chester, Berks y Bucks.",
+  "hero.caption": "Reemplazo de terraza en East Greenville. Arrastre el control para comparar.",
+
+  "cta.estimate": "Pida un presupuesto gratis",
+  "cta.call": "Llame a Jose",
+  "cta.text": "Envíe un mensaje a Jose",
+
+  "tag.before": "Antes",
+  "tag.after": "Después",
+
+  "facts.label": "Por qué elegir a Jose",
+  "facts.design": "<strong>Ayuda con el diseño incluida</strong> Planeamos la visión con usted",
+  "facts.pricing": "<strong>Precios justos y claros</strong> Sin sorpresas en la factura",
+  "facts.crew": "<strong>Equipo amable</strong> Respetuoso con su hogar",
+  "facts.travel": "<strong>Vamos a donde usted esté</strong> Con base en Pottstown, trabajamos en cuatro condados",
+
+  "services.title": "Lo que construimos",
+  "services.decks": "Terrazas (decks)",
+  "services.decksText": "Construcciones nuevas y reemplazos completos en material compuesto o madera, con barandas, escaleras e iluminación. Si su terraza se está pudriendo, la quitamos y le construimos una que dure.",
+  "services.siding": "Revestimiento exterior (siding)",
+  "services.sidingText": "Revestimiento de vinilo, fibrocemento y estilo tejuela, instalado limpio y bien ajustado. Un exterior renovado que protege su casa y mejora su apariencia.",
+  "services.baths": "Baños",
+  "services.bathsText": "Remodelaciones completas o mejoras sencillas: azulejos, duchas, bañeras, tocadores y accesorios. Mantenemos el trabajo ordenado y a tiempo.",
+  "services.patios": "Patios y concreto",
+  "services.patiosText": "Patios de adoquines, senderos, muros de contención, fogatas y losas de concreto, sobre una base compactada para que todo se mantenga nivelado por años.",
+
+  "process.title": "Le ayudamos a diseñarlo y luego lo construimos",
+  "process.lead": "¿No está seguro de lo que quiere? Ahí es donde Jose brilla. Recorrerá su propiedad con usted, compartirá ideas y le ayudará a definir la visión final, desde el diseño y los materiales hasta los colores y los últimos detalles.",
+  "process.s1": "Recorrido e ideas",
+  "process.s1Text": "Jose lo visita, escucha lo que usted imagina y le sugiere opciones que quizás no había considerado.",
+  "process.s2": "Diseñar la visión",
+  "process.s2Text": "Juntos deciden el diseño, los materiales y los detalles, para que sepa exactamente lo que va a recibir.",
+  "process.s3": "Presupuesto honesto",
+  "process.s3Text": "Un precio claro y justo desde el principio, sin costos inflados ni cargos sorpresa después.",
+  "process.s4": "Construirlo bien",
+  "process.s4Text": "El equipo se pone a trabajar, lo mantiene informado y deja todo limpio al terminar.",
+
+  "work.title": "De una franja de césped a un patio con fogata",
+  "work.p1": "Este jardín lateral en East Greenville era una franja de césped que nadie usaba. Jose lo recorrió con los dueños, diseñó un patio que rodea la casa y su equipo lo construyó con un muro de contención, un borde oscuro en contraste y una fogata integrada.",
+  "work.p2": "El mismo equipo reemplazó la terraza deteriorada que se ve al principio de esta página.",
+
+  "more.title": "Más proyectos",
+  "more.stairs": "Escalones de concreto",
+  "more.stairsText": "Estos escalones estaban agrietados, desmoronándose y cubiertos de maleza. El equipo los demolió, construyó moldes nuevos y vació escalones nuevos con un descanso firme. Aquí se ven justo después del vaciado.",
+  "more.bath": "Remodelación de baño",
+  "more.bathText": "Azulejo texturizado con efecto de ondas en las paredes, piso con aspecto de mármol, bañera nueva y accesorios en negro mate.",
+  "more.addition": "Ampliación y terraza",
+  "more.additionText": "Una ampliación nueva con su estructura y armaduras de techo, más una gran terraza de madera con escalera completa. Aquí se ve durante la obra.",
+
+  "reviews.title": "Lo que dicen los clientes",
+  "reviews.note": "Opiniones traducidas del inglés.",
+  "reviews.stars": "5 de 5 estrellas",
+  "reviews.r1": "Teníamos una franja de césped al lado de la casa que nunca usábamos. Jose vino, nos ayudó a imaginar lo que podía ser y su equipo la convirtió en un gran patio de adoquines con muro de contención y fogata. También reemplazaron nuestra terraza, que se estaba cayendo a pedazos. Excelente precio, excelente gente, y viajaron hasta East Greenville para hacerlo.",
+  "reviews.r1Job": ", patio de adoquines y terraza en East Greenville",
+  "reviews.r2": "Jose construyó una terraza mientras estábamos de vacaciones. Fue una experiencia increíble sin tener que preocuparnos de nada, ¡y su diseño podría salir en la portada de una revista de HGTV!",
+  "reviews.r2Job": ", terraza nueva",
+  "reviews.r3": "El equipo de Jose convirtió nuestra terraza de insegura a preciosa. ¡Ahora disfruto un café allí todos los días en el verano! Muchísimas gracias al equipo de Jose.",
+  "reviews.r3Job": ", reconstrucción de terraza",
+
+  "area.title": "Con base en Pottstown. Con gusto viajamos.",
+  "area.text": "Trabajamos en los condados de Montgomery, Chester, Berks y Bucks. ¿No ve su ciudad? Pregúntenos de todos modos.",
+
+  "contact.title": "Pida un presupuesto gratis",
+  "contact.text": "Llame o envíe un mensaje de texto a Jose para programar una visita. ¿Todavía no sabe lo que quiere? No hay problema. Él le ayudará a decidir.",
+
+  "form.title": "O envíe los detalles por mensaje de texto",
+  "form.name": "Nombre",
+  "form.town": "Ciudad",
+  "form.townPh": "ej. Pottstown",
+  "form.project": "Proyecto",
+  "form.optDeck": "Terraza",
+  "form.optSiding": "Revestimiento exterior",
+  "form.optBath": "Baño",
+  "form.optPatio": "Patio de adoquines",
+  "form.optConcrete": "Concreto",
+  "form.optOther": "Otra cosa",
+  "form.details": "Cuéntenos sobre su proyecto",
+  "form.detailsPh": "Tamaño, plazos, ideas, cualquier cosa que ayude",
+  "form.submit": "Enviar estos detalles a Jose",
+  "form.note": "Esto abre la aplicación de mensajes de su teléfono con todo ya escrito.",
+
+  "footer.text": "Terrazas, revestimiento exterior, baños, patios y concreto en los condados de Montgomery, Chester, Berks y Bucks, PA.",
+
+  "alt.deckAfter": "Después: nueva terraza de material compuesto gris con barandas blancas y negras",
+  "alt.deckBefore": "Antes: terraza de madera desgastada y podrida",
+  "alt.patioAfter": "Después: gran patio de adoquines con muro de contención junto a la casa",
+  "alt.patioBefore": "Antes: franja de césped junto a la casa",
+  "alt.firepit": "Fogata de adoquines integrada junto al nuevo patio",
+  "alt.deckDone": "Terraza de material compuesto terminada, con escaleras",
+  "alt.stairsBefore": "Antes: escalones de concreto agrietados y desmoronados, cubiertos de maleza",
+  "alt.stairsAfter": "Después: escalones de concreto nuevos, recién vaciados en moldes de madera",
+  "alt.bath": "Baño remodelado con azulejo blanco texturizado, bañera nueva y accesorios en negro mate",
+  "alt.addition": "Ampliación de una casa con armaduras de techo, sobre una nueva terraza de madera con escaleras",
+
+  "aria.compareDeck": "Comparar la terraza antes y después",
+  "aria.comparePatio": "Comparar el patio antes y después",
+  "aria.close": "Cerrar",
+
+  // Text message the contact form fills in
+  "sms.greeting": "Hola Jose, soy {name}. Encontré su página web.",
+  "sms.project": "Proyecto",
+  "sms.town": "Ciudad",
+};
