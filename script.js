@@ -59,29 +59,31 @@ document.querySelectorAll("[data-i18n], [data-i18n-alt], [data-i18n-ph], [data-i
 });
 
 let lang = "en";
+// Spanish for a key, falling back to the English original if a translation is missing
+const es = (key, fallback) => (key in ES ? ES[key] : fallback);
 const t = (key) => (lang === "es" && key in ES ? ES[key] : EN[key]);
 const langButton = document.getElementById("lang-toggle");
 
 function setLang(next) {
   lang = next;
-  const es = lang === "es";
+  const toEs = lang === "es";
   original.forEach((saved, el) => {
-    if ("html" in saved) el.innerHTML = es ? ES[el.dataset.i18n] ?? saved.html : saved.html;
+    if ("html" in saved) el.innerHTML = toEs ? es(el.dataset.i18n, saved.html) : saved.html;
     for (const [key, attr] of Object.entries(ATTRS)) {
-      if (attr in saved) el.setAttribute(attr, es ? ES[el.getAttribute(key)] ?? saved[attr] : saved[attr]);
+      if (attr in saved) el.setAttribute(attr, toEs ? es(el.getAttribute(key), saved[attr]) : saved[attr]);
     }
   });
   document.documentElement.lang = lang;
   document.title = t("page.title");
-  langButton.textContent = es ? "English" : "Español";
-  langButton.lang = es ? "en" : "es";
-  langButton.setAttribute("aria-label", es ? "View this site in English" : "Ver el sitio en español");
-  try { localStorage.setItem("lang", lang); } catch {}
+  langButton.textContent = toEs ? "English" : "Español";
+  langButton.lang = toEs ? "en" : "es";
+  langButton.setAttribute("aria-label", toEs ? "View this site in English" : "Ver el sitio en español");
+  try { localStorage.setItem("lang", lang); } catch (e) {}
 }
 
 langButton.addEventListener("click", () => setLang(lang === "es" ? "en" : "es"));
 let startLang = new URLSearchParams(location.search).get("lang");
-if (!startLang) { try { startLang = localStorage.getItem("lang"); } catch {} }
+if (!startLang) { try { startLang = localStorage.getItem("lang"); } catch (e) {} }
 if (startLang === "es") setLang("es");
 
 // Contact form -> opens the visitor's messages app with a pre-filled text
